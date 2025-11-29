@@ -17,7 +17,7 @@ spec:
       containers:
       - name: hello-c2
         image: busybox:latest
-        command: ['sh', '-c', 'echo "hello from c2, gah" && sleep 3600']
+        command: ['sh', '-c', 'echo "hello from c2, trigger" && sleep 3600']
         resources:
           limits:
             memory: "128Mi"
